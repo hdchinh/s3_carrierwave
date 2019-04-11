@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<% if @item_photos %>
+  <% @item_photos.each do |p| %>
+    <%= image_tag p.photo_url, style: "max-width: 200px; max-height: 200px" %>
+    <%= link_to "Destroy", item_photo_path(p), method: :delete %>
+  <% end %>
+<% end %>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
