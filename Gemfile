@@ -66,4 +66,4 @@ gem 'fog', require: 'fog/aws'
 gem 'carrierwave'
 
 # admin
-gem 'rails_admin', '~> 1.3'
+gem 'rails_admin', '~> 1.4'
